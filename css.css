@@ -6,14 +6,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #D3D3D3; /* Hellgrau */
     color: #333;
 }
 
 header {
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,13 +36,19 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF; /* Blau */
 }
 
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background-color: #dcdcdc;
+    background-color: #dcdcdc; /* Dunkelgrau */
     color: #333;
+    border-bottom: 3px solid #007BFF; /* Blauer Rahmen */
 }
 
 .leistungen {
@@ -52,12 +58,24 @@ nav ul li a {
 }
 
 .leistung {
-    margin-bottom: 20px;
+    display: inline-block; /* Nebeneinander anzeigen */
+    width: 30%;
+    margin: 1%;
+    padding: 20px;
+    border: 1px solid #007BFF; /* Blauer Rahmen */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Hellgrau */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.leistung:hover {
+    transform: translateY(-5px); /* Leicht anheben */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .leistung img {
-    width: 80%;
-    max-width: 400px;
+    width: 100%; /* Bild anpassen */
+    max-width: 300px; /* Maximale Breite */
     margin-bottom: 10px;
 }
 
